@@ -10,21 +10,20 @@
   <body>
     <div class="main">
       <!-- task1 -->
-      <a href="" onclick="alert('you can!')">Show alert</a>
-
+      <a href="" onclick="alert('Welcome')">Show alert</a>
+        <!-------Warning donot write javascript code in html doc best approach is to call function from script file -->
       <!-- task2 -->
-      <h2>Mobile Phone lookup</h2>
-      <div class="task_2">
-        <br>
+      <h2 class="font-theme mg-btm">Mobile Phone lookup</h2>
+      <div class="section1">
         <div class="card">
           <img id="s20"
           src="https://cdn.homeshopping.pk/product_images/x/761/7101w7I2tIL._SX679___21187_zoom.jpg"
           alt="refresh"
-            onclick="alert('model 2021 only black color available')"
+            onclick="popup('stock available in 3 colors')"
             onmouseover="swap('s20')"
             onmouseout="set('s20')"
           />
-          <h4>Samsung S20 Ultra</h4>
+          <h4 = class="font-theme center">Samsung S20 Ultra</h4>
         </div>
         <div class="card">
           <img id="note20"
@@ -32,9 +31,9 @@
             alt="refresh"
             onmouseover="swap('note20')"
             onmouseout="set('note20')"
-            onclick="alert('model 2020 only pink color available')"
+            onclick="popup('Available only in RosePink color')"
           />
-          <h4>Samsung Note 20</h4>
+          <h4 class="font-theme center">Samsung Note 20</h4>
         </div>
         <div class="card">
           <img id="12pro"
@@ -42,9 +41,9 @@
             alt="refresh"
             onmouseover="swap('12pro')"
             onmouseout="set('12pro')"
-            onclick="alert('Iphone 12 pro max  available')"
+            onclick="popup('limited stock available in black and grey color')"
           />
-          <h4>Iphone 12 pro max</h4>
+          <h4 class="font-theme center">Iphone 12 pro max</h4>
         </div>
         <div class="card">
           <img id="nova7i"
@@ -52,19 +51,28 @@
             alt="refresh"
             onmouseover="swap('nova7i')"
             onmouseout="set('nova7i')"
-            onclick="alert('model 2020 black & Blue color available')"
+            onclick="popup('Pre order now!')"
           />
-          <h4>Huawei Nova 7i</h4>
+          <h4 class="font-theme center">Huawei Nova 7i</h4>
         </div>
       </div>
-    <!-- task2 end -->
+    <!-- section1 end -->
 
-    <!-----task 3---->
+    <!-----section 2---->
     
-    <!-----task 4----->
-    <div class="task_4">
+    <!-----section 3----->
+    <div class="section3 center">
         <img id = "car" onmouseover="swap('car')" onmouseout="set('car')"  src="https://d3nv2arudvw7ln.cloudfront.net/images/952/372/slide1_MainMenu%20HP%20CAR.jpg" alt="">
-        <h4>Hover mouse on picture</h4>
+        <h4 class="font-theme center">Hover mouse on picture</h4>
+    </div>
+    <!--------section 4------>
+    <div class="section4">
+        <h2 class="font-theme">Counter</h2>
+        <input id="counterField" onfocus = "makeFieldRed('counterField')" onblur = "makeFieldwhite('counterField')" type="number" class="counter-display" value="0">
+        <dir class="btn-group">
+            <button onclick="decrement('counterField')"> - </button>
+            <button onclick="increment('counterField')"> + </button>
+        </dir>
     </div>
     </div>
   </body>
