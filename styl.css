@@ -1,0 +1,11 @@
+h2{
+    color: rgb(74, 146, 204);
+}
+img{
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid skyblue;
+    
+}
