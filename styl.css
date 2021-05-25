@@ -1,6 +1,7 @@
 .task_2{
     display: flex;
     justify-content: space-around;
+    margin-bottom:50px ;
 }
 h2{
     color: rgb(74, 146, 204);
@@ -19,4 +20,8 @@ h4{
     height: 100%;
     border: 1px solid skyblue;
     cursor: pointer;
+}
+
+table{
+    margin: 0 auto;
 }
