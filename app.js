@@ -55,6 +55,11 @@ function makeFieldwhite(counterFieldId){
 
 }
 
+function deleteRow(x){
+  var i = x.parentNode.parentNode.rowIndex;
+  document.getElementById('myTable').deleteRow(i);
+}
+
 var names = [
   "Ali",
   "Ahmed",
@@ -81,21 +86,7 @@ for (var i = 0; i < names.length; i++) {
       names[i] +
       "</td> <td>" +
       classes[i] +
-      "</td> <td><button onClick = 'deleteRow("+i+")'>Delete</button></td></tr>"
+      "</td> <td><button onclick = 'deleteRow(this)'>Delete</button></td></tr>"
   );
 }
 document.write("</table>");
-
-function deleteRow(ind) {
-    var indeces = []
-    var rows = document.getElementById('myTable').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
-    document.getElementById("myTable").deleteRow(ind);
-    names.splice(ind,1)
-    classes.splice(ind,1)
-    for (var j = 0; j < rows.length ; j++) {
-        
-    }
-    console.log(indeces);
-  }
-
-// /*******task 4  ***********/
